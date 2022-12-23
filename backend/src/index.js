@@ -10,7 +10,7 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
 mongoose.connect(
-  'mongodb+srv://herissonneves:lFQrqDQI0n28qyAq@cluster0.dkz1slr.mongodb.net/?retryWrites=true&w=majority',
+  'mongodb+srv://herissonneves:<>@cluster0.dkz1slr.mongodb.net/?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
   }
