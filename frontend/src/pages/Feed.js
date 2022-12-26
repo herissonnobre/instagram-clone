@@ -23,7 +23,9 @@ const Feed = () => {
 
       socket.on('like', (likedPost) => {
         setFeed((prevFeed) => {
-          feed.map((post) => (post._id === likedPost._id ? likedPost : post));
+          return feed.map((post) =>
+            post._id === likedPost._id ? likedPost : post
+          );
         });
       });
     };
