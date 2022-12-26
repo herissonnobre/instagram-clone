@@ -1,7 +1,7 @@
-const Post = require('../models/Post');
 const sharp = require('sharp');
 const path = require('path');
 const fs = require('fs');
+const Post = require('../models/Post');
 
 module.exports = {
   async index(req, res) {
@@ -11,6 +11,7 @@ module.exports = {
   },
 
   async store(req, res) {
+    // eslint-disable-next-line object-curly-newline
     const { author, place, description, hashtags } = req.body;
     const { filename: image } = req.file;
 
